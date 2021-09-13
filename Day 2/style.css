@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4DFD0;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+   background-color: #292c35; 
+}
+
+body.dark header{
+    background-color: #1f1b24;
+}
+
+header{
+    margin: 0 0 0 0;
+    background-color: #CDBBA7;
+    display: flex;
+    transition: background 0.2s linear;
+}
+
+.toggle{
+    margin-left: 400px;
+    padding-top: 190px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    height: 26px;
+    width: 50px;
+    display: flex;
+    border-radius: 50px;
+    background-color: #111;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.3);
+}
+
+.fa-moon-o{
+    color: #f1c40f;
+}
+
+.fa-sun-o{
+    color: #f39c12;
+}
+
+.ball{
+    background-color: #ffff;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+    background-color: black;
+}
+
+.checkbox:checked + .label{
+    background-color: white;
+}
+
+h2{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body.dark h2{
+    color: white;
+}
+
+.photo{
+    width: 170px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "education experience skills";
+    gap: 30px;
+    margin: 20px;
+    font-family: Verdana;
+}
+
+.education{
+    grid-area: education;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 2px 2px #DCDDE1;
+}
+
+body.dark .education{
+    background-color: #bb86fc;
+    box-shadow: 1px 4px 2px 2px #d3b0ff;
+}
+
+.experience{
+    grid-area: experience;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 2px 2px #DCDDE1;
+}
+
+body.dark .experience{
+    background-color: #bb86fc;
+    box-shadow: 1px 4px 2px 2px #d3b0ff;
+}
+
+.skills{
+    grid-area: skills;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 2px 2px #DCDDE1;
+}
+
+body.dark .skills{
+    background-color: #bb86fc;
+    box-shadow: 1px 4px 2px 2px #d3b0ff;
+}
+
+ul{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+h6{
+    margin-left: 6px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.name{
+    font-size: 55px;
+    padding-top: 95px;
+}
+
+.social{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    height: 50px;
+    width: 50px;
+    background-color: #F5F6FA;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 60px;
+    box-shadow: 1px 4px 2px 2px #DCDDE1;
+}
+
+body.dark a{
+    background-color: #1f1b24;
+    box-shadow: 1px 4px 2px 2px #16131a;
+}
+
+a i{
+    transition: all 0.3s linear;
+}
+
+a:hover i{
+    transform: scale(1.1);
+}
+
+.fa-twitter{
+    color:#0097E6;
+}
+
+.fa-instagram{
+    color: #E84393;
+}
+
+.fa-linkedin{
+    color: #0097E6;
+}
